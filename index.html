@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Yeneta Tereka</title>
+    <!-- Roboto and Lato font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Roboto+Condensed:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <!-- Font-awesome, bootstrap, social and local css -->
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="page-wrapper">
+
+        <div class="container-fluid first-container-fluid">
+            <div class="container first-container">
+
+                <header>
+                    <ul class="text-uppercase list-unstyled list-inline float-right mt-5">
+                        <li class="list-inline-item h1"><a data-toggle="modal" data-target="#loginModal">Log in</a></li>
+                        <li class="list-inline-item h1 ml-4"><a data-toggle="modal" data-target="#signupModal">Sign
+                                up</a></li>
+                    </ul>
+                </header>
+
+                <div id="loginModal" class="modal fade" role="dialog">
+                    <div class="modal-dialog modal-lg" role="content">
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title">Login </h4>
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="form-row">
+                                        <div class="form-group col-sm-4">
+                                            <label class="sr-only" for="loginEmail">Email address</label>
+                                            <input type="email" class="form-control form-control-sm mr-1"
+                                                id="loginEmail" placeholder="Enter email">
+                                        </div>
+                                        <div class="form-group col-sm-4">
+                                            <label class="sr-only" for="loginPassword">Password</label>
+                                            <input type="password" class="form-control form-control-sm mr-1"
+                                                id="loginPassword" placeholder="Password">
+                                        </div>
+                                        <div class="col-sm-auto">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox">
+                                                <label class="form-check-label"> Remember me
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <button type="button" class="btn btn-secondary btn-sm ml-auto"
+                                            data-dismiss="modal">Cancel</button>
+                                        <button type="submit" class="btn btn-primary btn-sm ml-1">Sign in</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="signupModal" class="modal fade" role="dialog">
+                    <div class="modal-dialog modal-lg" role="content">
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title">Create New Account</h4>
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="form-row">
+                                        <div class="form-group col-sm-5">
+                                            <label class="sr-only" for="fname">First Name</label>
+                                            <input type="text" class="form-control form-control-sm mr-1" id="fname"
+                                                placeholder="FIrst Name">
+                                        </div>
+                                        <div class="form-group col-sm-5">
+                                            <label class="sr-only" for="lname">Last Name</label>
+                                            <input type="password" class="form-control form-control-sm mr-1" id="lname"
+                                                placeholder="Last Name">
+                                        </div>
+                                        <div class="form-group col-sm-10">
+                                            <label class="sr-only" for="email">Email address</label>
+                                            <input type="email" class="form-control form-control-sm mr-1" id="email"
+                                                placeholder="Enter Email">
+                                        </div>
+                                        <div class="form-group col-sm-5">
+                                            <label class="sr-only" for="loginPassword">Password</label>
+                                            <input type="password" class="form-control form-control-sm mr-1"
+                                                id="loginPassword" placeholder="Password">
+                                        </div>
+                                        <div class="form-group col-sm-5">
+                                            <label class="sr-only" for="confirmPwd">Confirm Password</label>
+                                            <input type="password" class="form-control form-control-sm mr-1"
+                                                id="confirmPwd" placeholder="Confirm Password">
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <button type="button" class="btn btn-secondary btn-sm ml-auto"
+                                            data-dismiss="modal">Cancel</button>
+                                        <button type="submit" class="btn btn-primary btn-sm ml-1">Sign up</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <section>
+                    <div class="title row">
+                        <h1 class="text-uppercase logo col-12 text-center display-1">Yeneta Tereka</h1>
+                        <div class="moto col-10 m-auto p-3">
+                            <p class="moto-text text-capitalize text-center h2">Listen Amazing Ethiopian
+                                Stories. From
+                                any device. </p>
+                        </div>
+
+                        <form class="book-search-form col-12">
+                            <div class="input-group row">
+                                <input class="col-9 col-sm-5 p-2 offset-sm-1 form-control h1 search" type="text"
+                                    name="book" id="#book" placeholder="Search book ...">
+                                <div class="input-group-append">
+                                    <button type="submit" class="btn"><i class="fa fa-search fa-3x"></i></button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div class="container-fluid second-container-fluid">
+            <div class="us">
+                <div class="us-text">
+                    <h1 class="display-4 text-uppercase">Get to know us</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda tempora cum quod ducimus ad
+                        sit corrupti animi maccusantium velit.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid third-container-fluid p-4">
+            <h1 class="mt-5 text-white text-center display-4 font-weight-bold text-uppercase">Browse ahead</h1>
+            <div class="d-flex flex-column flex-sm-row p-2">
+                <div class="content text-center">
+                    <i class="fa fa-book" aria-hidden="true"></i>
+                    <h1 class="text-capitalize">Book Club Sessions</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque error porro perferendis alias?
+                    </p>
+                </div>
+                <div class="content text-center">
+                    <i class="fa fa-headphones" aria-hidden="true"></i>
+                    <h1 class="text-capitalize">Listen to atonishing stories</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque error porro perferendis alias?
+                    </p>
+                </div>
+                <div class="content text-center">
+                    <i class="fa fa-download" aria-hidden="true"></i>
+                    <h1 class="text-capitalize">Download and listen offline</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque error porro perferendis alias?
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid fourth-container-fluid">
+            <div class="contact text-center">
+                <h1 class="display-3 font-weight-bold text-uppercase">Contact us</h1>
+                <h2>Mailing Address</h2>
+                <p>12333, Lorem ipsum dolor sit amet.m USA</p>
+                <h2>Email Address</h2>
+                <p>12333, Lorem ipsum dolor sit amet.m USA</p>
+                <h2>Phone Number</h2>
+                <p>+123-456-78910</p>
+            </div>
+        </div>
+        <footer>
+            <p class="h2 text-center p-5">Made with 💚 💛 ❤️ Yeneta Developers &copy; 2020 </p>
+        </footer>
+    </div>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>

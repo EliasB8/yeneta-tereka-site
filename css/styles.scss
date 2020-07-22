@@ -1,0 +1,218 @@
+$teal: #cbf1f1;
+$darkBlue: #20385a;
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.page-wrapper {
+    background-color: $teal;
+}
+
+.container-fluid {
+    padding: 0;
+    margin: 0;
+}
+
+.container-fluid.first-container-fluid {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/background.jpg");
+}
+
+.container.first-container {
+
+    height: 100vh;
+    color: $teal;
+
+    header {
+        height: 100px;
+
+        a {
+            font-weight: 700;
+            color: $teal;
+
+            &:hover {
+                text-decoration: none;
+                color: rgba(203, 241, 241, 0.8);
+            }
+        }
+    }
+
+    .title {
+        margin-top: 120px;
+
+        @media screen and (max-width: 576px) {
+            margin-top: 40px;
+        }
+
+        .logo {
+            font-weight: 700;
+        }
+
+        .moto {
+            background-color: $teal;
+
+            .moto-text {
+                color: $darkBlue;
+            }
+        }
+    }
+
+    .book-search-form {
+        input::placeholder {
+            color: $teal;
+        }
+
+        .btn {
+            background-color: transparent;
+            color: $darkBlue;
+
+            &:focus {
+                box-shadow: none;
+            }
+
+            &:hover {
+                color: $teal;
+            }
+        }
+    }
+
+    .search {
+        background-color: transparent;
+        border: none;
+        border-bottom: 4px solid $darkBlue;
+        color: $teal;
+        font-size: 2rem;
+
+        &:focus {
+            outline: none;
+            box-shadow: none;
+        }
+    }
+
+
+    .modal-header {
+        background: $darkBlue;
+
+        .close {
+            color: $teal;
+        }
+    }
+
+    .modal-body {
+        background: $teal;
+
+        label.form-check-label {
+            color: $darkBlue;
+        }
+
+        input::placeholder {
+            color: $teal;
+        }
+
+        input {
+            background: $darkBlue;
+            color: $teal;
+            font-size: 1.25rem;
+
+            &:focus {
+                background: $darkBlue;
+                color: $teal;
+                box-shadow: none;
+            }
+        }
+
+        button {
+            color: $teal;
+        }
+
+        .btn-primary {
+            background-color: $darkBlue;
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .search {
+        margin-left: 35px;
+    }
+
+    .logo {
+        font-size: 4rem;
+    }
+
+    .moto {
+        font-size: 1.5rem;
+    }
+
+    header {
+        a {
+            font-size: 1.75rem;
+        }
+    }
+}
+
+.container-fluid.second-container-fluid {
+    padding: 0;
+    margin: 0;
+}
+
+.us {
+    background: linear-gradient(rgba(203, 241, 241, 0.3), rgba(203, 241, 241, 0.3)), url('../images/book-1149031_1280.jpg') no-repeat;
+    height: 80vh;
+    width: 65%;
+
+    .us-text {
+        background: white;
+        width: 90%;
+        color: $darkBlue;
+        position: relative;
+        padding: 30px;
+        top: 30%;
+        left: 62%;
+
+        @media screen and (max-width: 576px) {
+            width: 100%;
+            left: 35%;
+            top: 25%;
+            padding: 20px;
+
+            h1 {
+                font-size: 2.5rem;
+            }
+        }
+    }
+}
+
+.container-fluid.third-container-fluid {
+    font-family: 'Lato', sans-serif;
+    background: $darkBlue;
+    margin: 0 auto;
+    color: white;
+
+    .content {
+        margin: 20px;
+    }
+
+    i {
+        font-size: 10rem;
+        color: $teal;
+    }
+}
+
+.container-fluid.fourth-container-fluid {
+    background: linear-gradient(rgba(203, 241, 241, 0.7), rgba(203, 241, 241, 0.7)), url("../images/contact.jpg") no-repeat center center;
+    background-size: cover;
+    height: 100%;
+
+    .contact {
+        color: $darkBlue;
+        margin-top: 80px;
+        padding: 40px;
+    }
+
+    // overflow: hidden;
+}
+
+footer p.h2 {
+    margin-bottom: 0;
+}

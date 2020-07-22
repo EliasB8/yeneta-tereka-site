@@ -1,0 +1,133 @@
+body {
+  font-family: 'Roboto Condensed', sans-serif; }
+
+.page-wrapper {
+  background-color: #cbf1f1; }
+
+.container-fluid {
+  padding: 0;
+  margin: 0; }
+
+.container-fluid.first-container-fluid {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/background.jpg"); }
+
+.container.first-container {
+  height: 100vh;
+  color: #cbf1f1; }
+  .container.first-container header {
+    height: 100px; }
+    .container.first-container header a {
+      font-weight: 700;
+      color: #cbf1f1; }
+      .container.first-container header a:hover {
+        text-decoration: none;
+        color: rgba(203, 241, 241, 0.8); }
+  .container.first-container .title {
+    margin-top: 120px; }
+    @media screen and (max-width: 576px) {
+      .container.first-container .title {
+        margin-top: 40px; } }
+    .container.first-container .title .logo {
+      font-weight: 700; }
+    .container.first-container .title .moto {
+      background-color: #cbf1f1; }
+      .container.first-container .title .moto .moto-text {
+        color: #20385a; }
+  .container.first-container .book-search-form input::placeholder {
+    color: #cbf1f1; }
+  .container.first-container .book-search-form .btn {
+    background-color: transparent;
+    color: #20385a; }
+    .container.first-container .book-search-form .btn:focus {
+      box-shadow: none; }
+    .container.first-container .book-search-form .btn:hover {
+      color: #cbf1f1; }
+  .container.first-container .search {
+    background-color: transparent;
+    border: none;
+    border-bottom: 4px solid #20385a;
+    color: #cbf1f1;
+    font-size: 2rem; }
+    .container.first-container .search:focus {
+      outline: none;
+      box-shadow: none; }
+  .container.first-container .modal-header {
+    background: #20385a; }
+    .container.first-container .modal-header .close {
+      color: #cbf1f1; }
+  .container.first-container .modal-body {
+    background: #cbf1f1; }
+    .container.first-container .modal-body label.form-check-label {
+      color: #20385a; }
+    .container.first-container .modal-body input::placeholder {
+      color: #cbf1f1; }
+    .container.first-container .modal-body input {
+      background: #20385a;
+      color: #cbf1f1;
+      font-size: 1.25rem; }
+      .container.first-container .modal-body input:focus {
+        background: #20385a;
+        color: #cbf1f1;
+        box-shadow: none; }
+    .container.first-container .modal-body button {
+      color: #cbf1f1; }
+    .container.first-container .modal-body .btn-primary {
+      background-color: #20385a; }
+
+@media screen and (max-width: 576px) {
+  .search {
+    margin-left: 35px; }
+  .logo {
+    font-size: 4rem; }
+  .moto {
+    font-size: 1.5rem; }
+  header a {
+    font-size: 1.75rem; } }
+
+.container-fluid.second-container-fluid {
+  padding: 0;
+  margin: 0; }
+
+.us {
+  background: linear-gradient(rgba(203, 241, 241, 0.3), rgba(203, 241, 241, 0.3)), url("../images/book-1149031_1280.jpg") no-repeat;
+  height: 80vh;
+  width: 65%; }
+  .us .us-text {
+    background: white;
+    width: 90%;
+    color: #20385a;
+    position: relative;
+    padding: 30px;
+    top: 30%;
+    left: 62%; }
+    @media screen and (max-width: 576px) {
+      .us .us-text {
+        width: 100%;
+        left: 35%;
+        top: 25%;
+        padding: 20px; }
+        .us .us-text h1 {
+          font-size: 2.5rem; } }
+
+.container-fluid.third-container-fluid {
+  font-family: 'Lato', sans-serif;
+  background: #20385a;
+  margin: 0 auto;
+  color: white; }
+  .container-fluid.third-container-fluid .content {
+    margin: 20px; }
+  .container-fluid.third-container-fluid i {
+    font-size: 10rem;
+    color: #cbf1f1; }
+
+.container-fluid.fourth-container-fluid {
+  background: linear-gradient(rgba(203, 241, 241, 0.7), rgba(203, 241, 241, 0.7)), url("../images/contact.jpg") no-repeat center center;
+  background-size: cover;
+  height: 100%; }
+  .container-fluid.fourth-container-fluid .contact {
+    color: #20385a;
+    margin-top: 80px;
+    padding: 40px; }
+
+footer p.h2 {
+  margin-bottom: 0; }
