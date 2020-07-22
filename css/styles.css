@@ -79,7 +79,8 @@ body {
 @media screen and (max-width: 576px) {
 .container.first-container {
   height: 120vh;
-}
+  }
+  }
 
 @media screen and (max-width: 576px) {
   .search {
@@ -87,7 +88,8 @@ body {
   .logo {
     font-size: 4rem; }
   .moto {
-    font-size: 1.5rem; }
+            font-size: 1.2rem;
+        padding: 10px;}
   header a {
     font-size: 1.75rem; } }
 
