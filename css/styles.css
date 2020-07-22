@@ -93,7 +93,7 @@ body {
   header a {
     font-size: 1.75rem; }
   header ul.mt-5 {
-    margin-top: 15px; 
+    margin-top: 15px !important; 
 }
 
 .container-fluid.second-container-fluid {
