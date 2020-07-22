@@ -22,7 +22,10 @@ body {
 
     height: 100vh;
     color: $teal;
-
+    
+    @media screen and (max-width: 576px) {
+        height: 120vh;
+    }
     header {
         height: 100px;
 
