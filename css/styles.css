@@ -11,6 +11,8 @@ body {
 .container-fluid.first-container-fluid {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/background.jpg"); }
 
+
+
 .container.first-container {
   height: 100vh;
   color: #cbf1f1; }
@@ -73,6 +75,11 @@ body {
       color: #cbf1f1; }
     .container.first-container .modal-body .btn-primary {
       background-color: #20385a; }
+
+@media screen and (max-width: 576px) {
+.container.first-container {
+  height: 120vh;
+}
 
 @media screen and (max-width: 576px) {
   .search {
