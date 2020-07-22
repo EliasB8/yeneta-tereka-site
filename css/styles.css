@@ -91,7 +91,10 @@ body {
             font-size: 1.2rem;
         padding: 10px;}
   header a {
-    font-size: 1.75rem; } }
+    font-size: 1.75rem; }
+  header ul {
+    margin-top: 15px; 
+}
 
 .container-fluid.second-container-fluid {
   padding: 0;
