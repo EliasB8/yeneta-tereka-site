@@ -95,9 +95,9 @@ body {
         padding: 10px;}
   header a {
     font-size: 1.75rem; }
-  header ul.mt-5 {
-    margin-top: 15px !important; 
-}
+.container.first-container header ul {
+  margin-top: 15px;
+  }
 
 .container-fluid.second-container-fluid {
   padding: 0;
