@@ -92,7 +92,7 @@ body {
         padding: 10px;}
   header a {
     font-size: 1.75rem; }
-  header ul {
+  header ul.mt-5 {
     margin-top: 15px; 
 }
 
