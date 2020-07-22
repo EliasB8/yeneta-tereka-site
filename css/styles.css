@@ -31,7 +31,7 @@ body {
     margin-top: 120px; }
     @media screen and (max-width: 576px) {
       .container.first-container .title {
-        margin-top: 40px; } }
+        margin-top: 10px; } }
     .container.first-container .title .logo {
       font-weight: 700; }
     .container.first-container .title .moto {
